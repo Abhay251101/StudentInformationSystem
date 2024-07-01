@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Login</h1>
+            <form id="loginForm" action="connect.php" method="post">
+                <label for="loginUsername"><b>Username:</b></label>
+                <input type="text" id="loginUsername" required><br>
+                <label for="loginPassword"><b>Password:</b></label>
+                <input type="password" id="loginPassword" required><br>
+                <button type="submit"><b>Login</b></button>
+            </form>
+            <p><b>Don't have an account?</b> <a href="#" id="registerLink">Register here</a></p>
+        </div>
+        
+        <div class="form-container hidden" id="registrationFormContainer">
+            <h2>Registration</h2>
+            <form id="registrationForm">
+                <label for="username"><b>Username:</b></label>
+                <input type="text" id="username" required><br>
+                <label for="email"><b>E-mail ID:</b></label>
+                <input type="email" id="email" required><br>
+                <label for="location"><b>Location:</b></label>
+                <input type="text" id="location" required><br>
+                <label for="contactNumber"><b>Contact Number:</b></label>
+                <input type="tel" id="contactNumber" required><br>
+                <label for="password"><b>Password:</b></label>
+                <input type="password" id="password" required><br>
+                <label for="confirmPassword"><b>Confirm Password:</b></label>
+                <input type="password" id="confirmPassword" required><br>
+                <button type="submit"><b>Register</b></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

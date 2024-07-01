@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5124b09b84.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- about student -->
+    <div class="background">
+        <div class="container">
+            <i class="icon1 fa-solid fa-building-columns fa-2xl" style="color: #ffffff;"></i>
+            <div class="logo"><Span>Student</Span><br><Span>Portal</Span></div>
+            <ul>
+                <li><a class="navbar" href="">Home</a></li>
+                <li><a class="navbar" href="courses/course.html">Courses</a></li>
+                <li><a class="navbar" href="contact/contact.html">Contact us</a></li>
+                <li><a class="navbar" href="Testimonials/Testimonials.html">Testimonials</a></li>
+                <li><a class="navbar" href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <!-- moving headline -->
+        <div class="moving">
+            <h2 class="moving-headline">All the students are hereby informed that the last date for fee submission of even semester is 1 december,2024. For fee details : <a   class="moving-reg" href="fee.html">Click here</a></h2>
+        </div>
+
+
+
+
+        <div class="container2">
+            <h1 class="heading">student</h1>
+            <h1 class="heading">Information</h1>
+            <i class="icon2 fa-regular fa-user fa-flip fa-10x"></i>
+            <h2 class="detailsfirst">Student Name</h2>
+            <h2 class="detailsfirst">Studentname@gmail.com</h2>
+
+
+            <div class="information">
+                <table>
+                    <tr>
+                        <td class="row1">Father's name:</td>
+                        <td class="row2">Particular Name</td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Mother's name:</td>
+                        <td class="row2">Particular Name</td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Class roll no:</td>
+                        <td class="row2">03/20</td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Course:</td>
+                        <td class="row2">MCA</td>
+                    </tr>
+                    <tr>
+                        <td class="row1">College:</td>
+                        <td class="row2">Uttaranchal school of computing science</td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Specialization:</td>
+                        <td class="row2">General</td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Branch:</td>
+                        <td class="row2">N/A</td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Term:</td>
+                        <td class="row2">2023-2025</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- college information div -->
+        <div class="academic">
+            <div class="info">
+                <i class="fa-solid fa-check fa-xl" style="color: #f5f5f5;"></i><b class="subheadings">Circular
+                    notices</b>
+                <li class="moving-text1">All the students are hereby informed that the last date for fee submition has
+                    been extended.</li>
+            </div>
+            <div class="info">
+                <i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i><b
+                    class="subheadings">Notification</b>
+                <li class="moving-text">All the students are hereby informed that registraion for even semester has
+                    started.</li>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-newspaper fa-2xl" style="color: #ffffff;"></i><b class="subheadings">News</b>
+                <li class="moving-text2">College football team showed wonderful performance at inter-state football
+                    tournament,NEWSTV.</li>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-bookmark fa-xl" style="color: #ffffff;"></i><b
+                    class="subheadings">Substitution</b>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-square-poll-horizontal fa-xl" style="color: #ffffff;"></i><b
+                    class="subheadings">Result</b>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-book fa-xl" style="color: #ffffff;"></i><b class="subheadings">Library</b>
+                <li class="moving-text1">New books,novels has been arrived in libraray,students can now onwards borrow.
+                </li>
+            </div>
+        </div>
+        <!-- other options -->
+        <div class="options">
+            <ul class="sub-options">
+                <li><a class="sub-options1" href="fee.html">Fee</a></li>
+                <li><a class="sub-options1" href="">Assignment</a></li>
+                <li><a class="sub-options1" href="">Study material</a></li>
+                <li><a class="sub-options1" href="hostel.html">Hostel</a></li>
+                <li><a class="sub-options1" href="">OPAC</a></li>
+            </ul>
+        </div>
+
+
+
+        <!-- converter -->
+        <div class="converters-container">
+            <div class="converter-container" style="background-color: #6fa0a4;">
+                <h2 class="converter-heading">CGPA to Percentage</h2>
+                <label for="cgpa">Enter CGPA:</label>
+                <input type="number" id="cgpa" step="0.01" placeholder="Enter your CGPA" required>
+                <button onclick="convertToPercentage()">Convert</button>
+                <div id="resultPercentage" class="result"></div>
+            </div>
+    
+            <div class="converter-container" style="background-color: #8b5e83;">
+                <h2 class="converter-heading">Percentage to CGPA</h2>
+                <label for="percentage">Enter Percentage:</label>
+                <input type="number" id="percentage" step="0.01" placeholder="Enter your Percentage" required>
+                <button onclick="convertToCGPA()">Convert</button>
+                <div id="resultCGPA" class="result"></div>
+            </div>
+    
+            <div class="converter-container" style="background-color: #9e6e5f;">
+                <h2 class="converter-heading">SGPA to Percentage</h2>
+                <label for="sgpa">Enter SGPA:</label>
+                <input type="number" id="sgpa" step="0.01" placeholder="Enter your SGPA" required>
+                <button onclick="convertToPercentageSGPA()">Convert</button>
+                <div id="resultPercentageSGPA" class="result"></div>
+            </div>
+        </div>
+        
+
+
+
+        <!-- Placement -->
+        <div class="placement">
+            <h1 class="recuiters">Last years placements</h1>
+            <img class="Plc-img" src="logo/Placement.png" alt="last years placements">
+            <div class="place-para">
+                <p class="plc-para"> <em>"Embark on a journey of discovery and growth! At our college, we're not just
+                        offering placements; we're creating a launchpad for your talents. Join us, where learning is a
+                        lifestyle, challenges are opportunities, and every day is a step closer to your dream career
+                        destination."</em></p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- carousel -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <h1 class="recuiters">Our Recuiters</h1>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="logo/wipro.png" alt="Wipro Logo" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="logo/infosys.png" alt="Infosys Logo" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="logo/tothenew.png" alt="To The New Logo" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="logo/deloitte.png" alt="Deloitte Logo" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="logo/accenture.png" alt="Accenture Logo" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="logo/tcs.png" alt="TCS Logo" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="logo/cognizant.png" alt="Cognizant Logo" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="logo/microsoft.png" alt="microsoft Logo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- fotter -->
+        <footer>
+            <div class="fotter">
+                <p class="copyright">&copy; 2023 College Name. All rights reserved.</p>
+                <a href=""><i class="fa-brands fa-instagram fa-xl bottom-logo" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-facebook fa-xl bottom-logo" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-solid fa-envelope fa-xl bottom-logo" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp fa-xl bottom-logo" style="color: #ffffff;"></i></a>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script>
+         function convertToPercentage() {
+        var cgpa = document.getElementById('cgpa').value;
+        
+        // Conversion formula: CGPA * 9.5
+        var percentage = cgpa * 9.5;
+
+        // Display the result
+        document.getElementById('resultPercentage').innerHTML = "Percentage: " + percentage.toFixed(2) + "%";
+    }
+
+    function convertToCGPA() {
+        var percentage = document.getElementById('percentage').value;
+        
+        // Conversion formula: Percentage / 9.5
+        var cgpa = percentage / 9.5;
+
+        // Display the result
+        document.getElementById('resultCGPA').innerHTML = "CGPA: " + cgpa.toFixed(2);
+    }
+
+    function convertToPercentageSGPA() {
+            var sgpa = parseFloat(document.getElementById('sgpa').value);
+
+            if (!isNaN(sgpa)) {
+                var percentage = (sgpa * 10) - 7.5;
+                document.getElementById('resultPercentageSGPA').innerHTML = '<p>Your Percentage: ' + percentage.toFixed(2) + '%</p>';
+            } else {
+                document.getElementById('resultPercentageSGPA').innerHTML = '<p>Please enter a valid SGPA.</p>';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

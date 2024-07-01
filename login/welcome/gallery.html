@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            margin-top:0 ;
+            padding-top: 0;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+            align-items: flex-start; 
+        }
+
+        .gallery-item {
+            width: 300px;
+            margin: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item .caption {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 0 0 8px 8px;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+
+        .text-container {
+            width: 80%; /* Reduce the width of text containers */
+            margin: 20px auto; /* Center the text containers */
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            overflow: hidden;
+            text-align: justify; /* Justify text */
+        }
+
+        .text-container p {
+            margin-bottom: 10px; /* Remove default margin for better spacing */
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>College Gallery</title>
+</head>
+<body>
+
+    <header>
+        <h1>Explore Our Campus</h1>
+        <p>Discover the beauty and vibrancy of our illustrious institution through these compelling images and thought-provoking lines.</p>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="college-img/6.jpg" alt="Image 1">
+            <div class="caption">Student Life</div>
+        </div>
+        <div class="text-container">
+            <p>Embark on a magnificent journey where challenges transform into triumphs and experiences weave the tapestry of unforgettable memories. This is a sample paragraph with increased words to demonstrate the changes made. It can be further adjusted based on your content needs.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="college-img/7.jpg" alt="Image 2">
+            <div class="caption">Campus Events</div>
+        </div>
+        <div class="text-container">
+            <p>Educational endeavors pave the way to an enlightened future, where wisdom serves as the compass to navigate uncharted horizons.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="college-img/4.jpg" alt="Image 3">
+            <div class="caption">Academic Excellence</div>
+        </div>
+        <div class="text-container">
+            <p>Strive not for perfection, but for progress. Growth stems from relentless effort and the wisdom gained through every encounter.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="college-img/th.jpg" alt="Image 4">
+            <div class="caption">Sports and Recreation</div>
+        </div>
+        <div class="text-container">
+            <p>Champions persist until victory is achieved, for perseverance and dedication are the cornerstones of success in both sports and life.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="college-img/5.jpg" alt="Image 5">
+            <div class="caption">Cultural Diversity</div>
+        </div>
+        <div class="text-container">
+            <p>Harmony in diversity amplifies the vibrancy of the campus. Embrace the diverse perspectives; they are the threads of a rich tapestry.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="college-img/2.jpg" alt="Image 6">
+            <div class="caption">Innovative Learning</div>
+        </div>
+        <div class="text-container">
+            <p>Learning, a treasure transcending time and space, follows its possessor. Cultivate a love for learning; it is a lifelong companion in personal and professional growth.</p>
+        </div>
+        <!-- Repeat the pattern for other gallery items and text containers -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 College Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

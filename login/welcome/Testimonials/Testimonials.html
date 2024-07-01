@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Testimonials</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-decoration: underline;
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .testimonials-container {
+            max-width: 800px;
+            margin: 50px auto;
+            margin-bottom: 100px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial {
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .testimonial:hover {
+            transform: scale(1.02);
+        }
+
+        .testimonial::before {
+            content: '\201C'; /* Unicode character for double quotes */
+            font-size: 36px;
+            color: #3498db;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .testimonial p {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .testimonial .details {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .testimonial .author {
+            font-weight: bold;
+            color: #3498db;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Testimonials</h1>
+</header>
+
+<div class="testimonials-container">
+    <div class="testimonial">
+        <p>"I had an amazing experience at this college. The faculty is highly knowledgeable, and the campus provides a great learning environment."</p>
+        <div class="details">
+            <span class="author">John Doe</span> | <span class="course">Computer Science</span>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p>"The college not only focuses on academics but also on extracurricular activities. It helped me grow both academically and personally."</p>
+        <div class="details">
+            <span class="author">Jane Smith</span> | <span class="course">Business Administration</span>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p>"I appreciate the support and guidance I received from the college staff. The resources and facilities available are top-notch."</p>
+        <div class="details">
+            <span class="author">David Johnson</span> | <span class="course">Engineering</span>
+        </div>
+    </div>
+
+    <!-- Additional Testimonials -->
+    <div class="testimonial">
+        <p>"The college's commitment to excellence is truly commendable. The diverse community and inclusive atmosphere make it a great place to learn and thrive."</p>
+        <div class="details">
+            <span class="author">Emily Rodriguez</span> | <span class="course">Social Sciences</span>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p>"I'm grateful for the hands-on learning experiences provided by the college. The internships and practical projects prepared me well for the professional world."</p>
+        <div class="details">
+            <span class="author">Alex Turner</span> | <span class="course">Marketing</span>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p>"The collaborative and supportive environment at the college fostered my intellectual curiosity. I developed critical thinking skills that will benefit me throughout my career."</p>
+        <div class="details">
+            <span class="author">Sophia Lee</span> | <span class="course">Psychology</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 College Name. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
